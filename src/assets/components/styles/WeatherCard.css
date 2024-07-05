@@ -1,0 +1,135 @@
+.card {
+    width: 100%;
+    max-width: 22em;
+    background-color: rgba(198, 166, 149, 0.667);
+    padding: 1em;
+    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+
+
+
+    .card__title {
+        display: flex;
+        text-align: center;
+        font-weight: 900;
+        font-size: 1.5em;
+        margin-bottom: 0.2em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card__country {
+        font-size: 1em;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1em;
+
+    }
+    .card__city {
+        font-weight: 400;
+        color: #684003;
+    }
+
+    .card__body {
+
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .card__image-container {}
+
+        .info {
+
+            display: grid;
+            grid-template-rows: 1fr 4fr;
+            gap: 1em;
+
+            .info__title {
+
+                font-size: 0.8em;
+                text-align: center;
+                font-weight: 700;
+                text-transform: capitalize;
+
+                &::after,
+                &::before {
+                    content: '"';
+                }
+            }
+
+            .info__list {
+
+                .info__item {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 0.8em;
+
+                }
+
+                .info__label {
+                    color: #2b2b2d;
+                }
+
+                .info__value {
+                    font-weight: 900;
+                }
+            }
+
+
+
+
+        }
+
+    }
+
+    .card__temp {
+        text-align: center;
+        margin-bottom: 0.1em;
+        font-weight: 900;
+        font-size: 3em;
+
+    }
+
+    .card__btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.9em;
+        background-color: rgb(171, 69, 32);
+        color: white;
+        padding: 0.4em 2 em;
+        border-radius: 0.3em;
+        width: 60%;
+        height: 2em;
+        border: solid white;
+            border-radius: 0.2em;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 13px 10px #ee991a;
+            background-color: rgb(206, 206, 76);
+            color: black;
+            /* filter:brightness(1.2); */
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .card {
+        font-size: 1.5rem;
+    }
+   
+}
